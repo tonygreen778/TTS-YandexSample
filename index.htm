@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&display=swap">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap-slider.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>TTS Test</title>
+</head>
+<body>
+
+  <header class="my-head">
+    <div class="container">
+      <div class="media">
+        <img src="img/iconfinder_robot_64_192541.png" class="mr-3" alt="...">
+        <div class="media-body-header">
+          <h4 class="mt-0 mb-1">Yandex Speech Test</h4>
+          Здесь можно попробовать озвучить набранный текст
+        </div>
+      </div>        
+    </div>
+  </header>
+
+  <div class="container parameters">
+    <form class="needs-validation" novalidate>
+      <div class="row">
+        <div class="col">
+
+          <div class="form-group validate-me">
+            <textarea class="form-control mytextarea" id="textarea1" rows="3" required></textarea>
+            <div class="invalid-feedback">
+              Нужен какой-то текст, чтобы его озвучить
+            </div> 
+          </div>
+
+        </div>
+      </div>
+
+      <div class="row">
+
+        <div class="col-sm">
+          <div class="form-group">
+            <label for="selectVoice">Голос</label>
+            <select class="form-control selectVoice" id="cbVoice" novalidate>
+              <option value="oksana">oksana</option>
+              <option value="jane">jane</option>
+              <option value="omazh">omazh</option>
+              <option value="zahar">zahar</option>
+              <option value="ermil">ermil</option>
+            </select>
+          </div>
+        </div>
+
+
+        <div class="col-sm">
+          <div class="form-group">
+            <label for="selectVoice">Эмоция</label>
+            <select class="form-control selectEmotion" id="cbEmotion" name="selectEmotionPicker">
+              <option value="good">good</option>
+              <option value="neutral">neutral</option>
+              <option value="evil">evil </option>
+            </select>
+          </div>
+        </div>          
+
+      </div>
+
+<!-- Draw Slider - not best solution, temporary diabled
+        <div class="row">
+          <div class="col-sm">
+            <div class="form-group">
+              <label for="formControlRange">Скорость</label>
+              <div class="myslider">
+              <input class="speedSlider" id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="0.5" data-slider-max="3" data-slider-step=".5" data-slider-value="1"/>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+          </div>          
+        </div>
+      -->
+
+    </div>
+
+    <div class="row">
+      <div class="col-sm text-center after-text">
+        <button type="submit" class="btn btn-outline-primary speak-now">
+          Послушать
+          <span class="spinner-grow-sm" role="status" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </form>
+
+</div>
+</div>
+</div>
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js//popper.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="bootstrap/js/bootstrap-slider.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+body{
+	min-width: 320px;
+	font-size: 14px;
+	font-family: 'Poppins', sans-serif;
+	color: #020202;
+	background-color: #f2f2f2;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+a{
+	color: #b4ad9e;
+}
+
+a:hover{
+	color: #898377;
+}
+
+.my-head{
+	margin-top: 1rem;
+	margin-bottom: .5rem;
+}
+
+.media .media-body-header {
+	margin-top: 7px;
+}
+
+.after-text{
+	margin-top: 1rem;	
+}
+
+.parameters label{
+	margin-top: 1rem;
+	margin-left: 3px;
+	color: #495057;
+}
+
+#ex1Slider {
+	height: 20px;
+}
+
+
+#ex1Slider .slider-selection {
+	background: #ced4da;	
+}
+
+#ex1Slider .slider-handle {
+	background: #007bff;
+}
